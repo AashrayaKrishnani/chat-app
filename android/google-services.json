@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "706953368540",
+    "project_id": "chatapp-c7f79",
+    "storage_bucket": "chatapp-c7f79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706953368540:android:a839ae54f291deafecb519",
+        "android_client_info": {
+          "package_name": "com.aashraya.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706953368540-v40bpkjge0koqsmb7qn2f334ho1n7qpa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaB3Dq8VR0IDFF3E24vcZVko51H5VOG8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706953368540-v40bpkjge0koqsmb7qn2f334ho1n7qpa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
