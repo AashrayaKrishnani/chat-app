@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+import 'snack.dart';
+
 class MainDrawer extends StatelessWidget {
   const MainDrawer({Key? key}) : super(key: key);
 
@@ -16,7 +18,15 @@ class MainDrawer extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: GestureDetector(
-              onTap: (() => FirebaseAuth.instance.signOut()),
+              onTap: (() {
+                final sms = ScaffoldMessenger.of(context);
+                FirebaseAuth.instance.signOut();
+                sms.showSnackBar(Snack(
+                  text: 'Logged Out.',
+                  bgColor: Colors.red,
+                  textColor: Colors.white,
+                ));
+              }),
               child: ListTile(
                 leading: const Icon(Icons.logout),
                 title: Text(
