@@ -55,18 +55,15 @@ class MessageBubble extends StatelessWidget {
                         ),
                         color: isMe
                             ? Colors.grey.shade400
-                            : Theme.of(context)
-                                .colorScheme
-                                .secondary
-                                .withOpacity(.5),
+                            : Theme.of(context).colorScheme.secondary,
                       ),
                       child: Text(message,
                           style: TextStyle(
                               // fontWeight: !isMe ? FontWeight.bold : null,
                               fontSize: 20,
                               color: isMe
-                                  ? Colors.black.withOpacity(.76)
-                                  : Theme.of(context).colorScheme.primary),
+                                  ? Colors.black.withOpacity(.85)
+                                  : Colors.white),
                           textAlign: _textAlign),
                     ),
                   ],
